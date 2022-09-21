@@ -111,8 +111,8 @@ public class IntegerArray {
         int average = theSum / list.length;
 
         // difference of each array
-        int[] difference = new int[list.length];for(
-        int eachDifference = 0;eachDifference<list.length;eachDifference++)
+        int[] difference = new int[list.length];
+            for(int eachDifference = 0; eachDifference<list.length; eachDifference++)
             {
             difference[eachDifference] = list[eachDifference] - average;
             }
@@ -127,8 +127,9 @@ public class IntegerArray {
         for(int i = 0;i<list.length;i++)
             {
             System.out.print(difference[i] + ", ");
-            System.out.println();
             }
+        System.out.println();
+
     }
 
     //Sum of elements with odd or even-numbered indexes
