@@ -65,6 +65,38 @@ public class IntegerArray {
     }
 
     // find the minimum and maximum of the array, implemented as different methods
+    public static int MaxValue(int [] list ) 
+    {
+
+        int maxValue = list[0];
+
+        for(int i = 0; i < list.length; i++)
+        {
+            if(list[i] > maxValue)
+            {
+                maxValue = list[i];
+            }
+        }
+
+        return maxValue;
+    }
+
+    public static int MinValue(int [] list)
+    {
+
+        int minValue = list[0];
+
+        for(int i = 0; i < list.length; i++)
+        {
+            if(list[i] < minValue)
+            {
+                minValue = list[i];
+            }
+
+        }
+
+        return minValue;
+    }
 
     // find the average of the array, then display the differences of each array to
     // the average
