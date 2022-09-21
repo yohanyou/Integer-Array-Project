@@ -37,13 +37,14 @@ public class IntegerArray {
     
             int userInput = in.nextInt();
 
-            if (userInput == 1)
-                {
-    
+            if (userInput == 1){
+                System.out.println("mimimum: " + MaxValue(nums));
+                System.out.println("maximum: " + MinValue(nums));
                 }
     
             if (userInput == 2)
-                {
+                
+            {
     
                 }
     
@@ -61,7 +62,7 @@ public class IntegerArray {
     }
 
     // find the minimum and maximum of the array, implemented as different methods
-    public static int MaxValue(int [] list ) 
+    public static int MaxValue(int[] list) 
     {
 
         int maxValue = list[0];
@@ -77,7 +78,7 @@ public class IntegerArray {
         return maxValue;
     }
 
-    public static int MinValue(int [] list)
+    public static int MinValue(int[] list)
     {
 
         int minValue = list[0];
@@ -96,39 +97,33 @@ public class IntegerArray {
 
     // find the average of the array, then display the differences of each array to the average
 
-    public static void AverageArray(int size) {
-        int[] original = new int[size];
-        for(int i = 0;i<original.length;i++)
-            {
-            original[i] = (int) (Math.random() * 100);
-            }
-        int theSum = 0; 
-
+    public static void AverageArray(int[] list) {
+        int theSum = 0;
         // finding the sum of the numbers in array
         for(
-            int k = 0;k<original.length;k++)
+            int k = 0;k<list.length;k++)
                 {
-                theSum += original[k];
+                theSum += list[k];
                 }
 
         // the average
-        int average = theSum / size;
+        int average = theSum / list.length;
 
         // difference of each array
-        int[] difference = new int[size];for(
-        int eachdifference = 0;eachdifference<original.length;eachdifference++)
+        int[] difference = new int[list.length];for(
+        int eachDifference = 0;eachDifference<list.length;eachDifference++)
             {
-            difference[eachdifference] = original[eachdifference] - average;
+            difference[eachDifference] = list[eachDifference] - average;
             }
-        System.out.print("\nThe Original Array: ");
-        for(int i = 0;i<original.length;i++)
+        System.out.println("The Original Array: ");
+        for(int i = 0;i<list.length;i++)
             {
-            System.out.print(original[i] + ", ");
+            System.out.print(list[i] + ", ");
             }      
-        System.out.println("\nThe average: "+average);
+        System.out.println("The average: " + average);
 
         System.out.print("the differences of each array to the average: ");
-        for(int i = 0;i<original.length;i++)
+        for(int i = 0;i<list.length;i++)
             {
             System.out.print(difference[i] + ", ");
             }
