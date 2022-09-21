@@ -9,7 +9,11 @@ public class IntegerArray {
     //until the user decides to exit, keep displaying it
     public static void main(String[] args){
         System.out.println("Please choose what you would like to do:");
-        System.out.println("");
+        System.out.println("1. Find the minimum and maximum of the array");
+        System.out.println("2. Find the average of the array");
+        System.out.println("3. find the sum of the elements with odd and even numbered indexes");
+        System.out.println("9. Exit the program.");
+
 
     }
 
