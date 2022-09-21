@@ -5,9 +5,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 public class IntegerArray {
 
-<<<<<<< Updated upstream
-    // create an int array that contains random integers in the range [0,100]
-
     // display the menu options, get the user's choice, call the methods
     // until the user decides to exit, keep displaying it
     public static void main(String[] args) {
@@ -60,9 +57,7 @@ public class IntegerArray {
                     programContinuation = 0;
                     in.close();
                 }
-    
         }
-
     }
 
     // find the minimum and maximum of the array, implemented as different methods
@@ -99,65 +94,43 @@ public class IntegerArray {
         return minValue;
     }
 
-    // find the average of the array, then display the differences of each array to
-    // the average
-
-    // find the sum of the odd and even numbered indexes
-=======
-    //create an int array that contains random integers in the range [0,100]
-
-
-    //display the menu options, get the user's choice, call the methods
-    //until the user decides to exit, keep displaying it
-
-
-
-    //find the minimum and maximum of the array, implemented as different methods
-
-
-
-    //find the average of the array, then display the differences of each array to the average
+    // find the average of the array, then display the differences of each array to the average
 
     public static void AverageArray(int size) {
-    int[] original = new int[size];for(
-    int i = 0;i<original.length;i++)
-    {
-        original[i] = (int) (Math.random() * 100);
+        int[] original = new int[size];for(
+        int i = 0;i<original.length;i++)
+            {
+            original[i] = (int) (Math.random() * 100);
+            }
+        int theSum = 0; 
+
+        // finding the sum of the numbers in array
+        for(
+            int k = 0;k<original.length;k++)
+                {
+                theSum += original[k];
+                }
+
+        // the average
+        int average = theSum / size;
+
+        // difference of each array
+        int[] difference = new int[size];for(
+        int eachdifference = 0;eachdifference<original.length;eachdifference++)
+            {
+            difference[eachdifference] = original[eachdifference] - average;
+            }
+        System.out.print("\nThe Original Array: ");
+        for(int i = 0;i<original.length;i++)
+            {
+            System.out.print(original[i] + ", ");
+            }      
+        System.out.println("\nThe average: "+average);
+
+        System.out.print("the differences of each array to the average: ");
+        for(int i = 0;i<original.length;i++)
+            {
+            System.out.print(difference[i] + ", ");
+            }
     }
-    int theSum = 0; 
-
-    // finding the sum of the numbers in array
-    for(
-    int k = 0;k<original.length;k++)
-    {
-        theSum += original[k];
-    }
-
-    // the average
-    int average = theSum / size;
-
-    // difference of each array
-    int[] difference = new int[size];for(
-    int eachdifference = 0;eachdifference<original.length;eachdifference++)
-    {
-        difference[eachdifference] = original[eachdifference] - average;
-    }System.out.print("\nThe Original Array: ");for(
-    int i = 0;i<original.length;i++)
-    {
-        System.out.print(original[i] + ", ");
-    }System.out.println("\nThe average: "+average);
-
-    System.out.print("the differences of each array to the average: ");for(
-    int i = 0;i<original.length;i++)
-    {
-        System.out.print(difference[i] + ", ");
-    }
-}
-
-
-    //find the sum of the odd and even numbered indexes 
-
-
->>>>>>> Stashed changes
-
 }
