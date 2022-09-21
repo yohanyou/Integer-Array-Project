@@ -44,13 +44,14 @@ public class IntegerArray {
     
             if (userInput == 2)
                 
-            {
-    
+                {
+                AverageArray(nums);
                 }
     
             if (userInput == 3)
                 {
-    
+                evenIndexSum(nums);
+                oddIndexSum(nums);
                 }
     
             if (userInput == 0)
@@ -122,10 +123,37 @@ public class IntegerArray {
             }      
         System.out.println("The average: " + average);
 
-        System.out.print("the differences of each array to the average: ");
+        System.out.print("The differences of each array to the average: ");
         for(int i = 0;i<list.length;i++)
             {
             System.out.print(difference[i] + ", ");
             }
     }
+
+    //Sum of elements with odd or even-numbered indexes
+
+    public static void evenIndexSum(int[] list){
+        int evenVariableSum = 0;
+
+        for (int i = 0; i < list.length; i++){
+            if (list[i] % 2 == 0){
+                evenVariableSum += list[i];
+                }        
+        }
+        
+        System.out.println("Even index sum: " + evenVariableSum);
+    }
+
+    public static void oddIndexSum(int[] list){
+        int oddVariableSum = 0;
+
+        for (int i = 0; i < list.length; i++){
+            if (list[i] % 2 == 1){
+                oddVariableSum += list[i];
+                }            
+        }
+        
+        System.out.println("Odd index sum: " + oddVariableSum);
+    }
+
 }
