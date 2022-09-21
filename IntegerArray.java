@@ -2,6 +2,7 @@ import java.lang.Math;
 import java.util.Arrays;
 
 //this class is used to solve all sorts of IntegerArray problems
+import java.util.Scanner;
 public class IntegerArray {
 
     // create an int array that contains random integers in the range [0,100]
@@ -21,11 +22,42 @@ public class IntegerArray {
 
         System.out.println(Arrays.toString(nums));
 
-        System.out.println("Please choose what you would like to do:");
-        System.out.println("1. Find the minimum and maximum of the array");
-        System.out.println("2. Find the average of the array");
-        System.out.println("3. find the sum of the elements with odd and even numbered indexes");
-        System.out.println("9. Exit the program.");
+        int programContinuation = 1;        
+
+        Scanner in = new Scanner(System.in);
+
+        while (programContinuation > 0)
+        {
+            System.out.println("Please choose what you would like to do:");
+            System.out.println("1. Find the minimum and maximum of the array");
+            System.out.println("2. Find the average of the array");
+            System.out.println("3. find the sum of the elements with odd and even numbered indexes");
+            System.out.println("9. Exit the program.");
+    
+            int userInput = in.nextInt();
+
+            if (userInput == 1)
+                {
+    
+                }
+    
+            if (userInput == 2)
+                {
+    
+                }
+    
+            if (userInput == 3)
+                {
+    
+                }
+    
+            if (userInput == 4)
+                {
+                    programContinuation = 0;
+                    in.close();
+                }
+    
+        }
 
     }
 
