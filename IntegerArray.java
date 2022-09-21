@@ -38,8 +38,8 @@ public class IntegerArray {
             int userInput = in.nextInt();
 
             if (userInput == 1){
-                System.out.println("mimimum: " + MaxValue(nums));
-                System.out.println("maximum: " + MinValue(nums));
+                System.out.println("mimimum: " + MinValue(nums));
+                System.out.println("maximum: " + MaxValue(nums));
                 }
     
             if (userInput == 2)
@@ -127,6 +127,7 @@ public class IntegerArray {
         for(int i = 0;i<list.length;i++)
             {
             System.out.print(difference[i] + ", ");
+            System.out.println();
             }
     }
 
