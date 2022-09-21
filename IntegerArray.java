@@ -97,8 +97,8 @@ public class IntegerArray {
     // find the average of the array, then display the differences of each array to the average
 
     public static void AverageArray(int size) {
-        int[] original = new int[size];for(
-        int i = 0;i<original.length;i++)
+        int[] original = new int[size];
+        for(int i = 0;i<original.length;i++)
             {
             original[i] = (int) (Math.random() * 100);
             }
